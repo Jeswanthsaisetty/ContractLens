@@ -410,8 +410,6 @@ function App() {
      GLOBAL UI
      ============================================================ */
 
-  const [loading, setLoading] =
-    useState(false);
 
   const [error, setError] =
     useState("");
