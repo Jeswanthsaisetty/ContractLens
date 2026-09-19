@@ -23,7 +23,7 @@ import {
 
 import "./App.css";
 
-const API = "http://127.0.0.1:8000/api";
+const API = "https://contractlens-backend.onrender.com/api";
 
 /* ============================================================
    TYPES
