@@ -30,3 +30,4 @@ watchfiles==1.2.0
 websockets==17.1
 openai>=1.0.0
 SQLAlchemy>=2.0,<3.0
+requests>=2.32,<3.0
