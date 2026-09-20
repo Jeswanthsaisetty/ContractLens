@@ -25,11 +25,12 @@ app = FastAPI(
 # Allow the React/Vite frontend to communicate with FastAPI
 app.add_middleware(
     CORSMiddleware,
-   allow_origins=[
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://contract-lens-d66y616z5-jeswanthsaisettys-projects.vercel.app/",
-],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://contract-lens-two.vercel.app",
+    ],
+    allow_origin_regex=r"https://contract-lens-[a-z0-9]+-jeswanthsaisettys-projects\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
